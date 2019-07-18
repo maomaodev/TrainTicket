@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">12307购票</string>
+
+    <string name="login_text">登录</string>
+    <string name="auto_login">自动登录</string>
+    <string name="account_hint">请输入账号</string>
+    <string name="password_hint">请输入密码</string>
+    <string name="turn_to_register">还没有注册?</string>
+    <string name="login_protocol_text">登录即代表您同意我们的服务协议和隐私政策</string>
+
+
+    <string name="register_text">注册</string>
+    <string name="account_text">账号</string>
+    <string name="password_text">密码</string>
+    <string name="re_password_text">确认密码</string>
+    <string name="re_password_hint">请再次输入密码</string>
+    <string name="real_name_text">真实姓名</string>
+    <string name="real_name_hint">请输入真实姓名</string>
+    <string name="id_number_text">身份证号</string>
+    <string name="id_number_hint">请输入身份证号</string>
+    <string name="user_type_text">用户身份</string>
+    <string name="user_type_adult">成人</string>
+    <string name="user_type_student">学生</string>
+    <string name="re_password_error_hint">两次输入的密码不一致</string>
+    <string name="id_number_error_hint">请正确输入18位身份证号码</string>
+
+
+    <string name="main_tab_one">购票</string>
+    <string name="start_station_hint">出发地</string>
+    <string name="end_station_hint">目的地</string>
+    <string name="start_station_in_hint">请输入出发地</string>
+    <string name="end_station_in_hint">请输入目的地</string>
+    <string name="start_end_same_error_hint">出发地不能和目的地相同</string>
+    <string name="start_date_text">出发日期</string>
+    <string name="start_time_text">出发时间</string>
+    <string name="model_all">全部</string>
+    <string name="model_g">高铁</string>
+    <string name="model_t">特快</string>
+    <string name="model_k">快车</string>
+    <string name="query_text">查询</string>
+    <string name="query_failed_text">查询失败</string>
+
+    <string name="zy_num_text">一等座\n%s</string>
+    <string name="ze_num_text">二等座\n%s</string>
+    <string name="rw_num_text">软卧\n%s</string>
+    <string name="yw_num_text">硬卧\n%s</string>
+    <string name="yz_num_text">硬座\n%s</string>
+    <string name="wz_num_text">无座\n%s</string>
+    <string name="add_member_text">添加乘客</string>
+    <string name="select_member_tip">请选择联系人</string>
+    <string name="select_member_text">选择联系人</string>
+    <string name="seat_none_tip">该座次已无余票</string>
+    <string name="generate_order_tip">正在生成订单...</string>
+    <string name="finish_btn_text">完成</string>
+
+    <string name="pay_ticket_text">支付页面</string>
+    <string name="should_pay_text">应付金额：%s元</string>
+    <string name="gs_bank">工商银行</string>
+    <string name="ny_bank">农业银行</string>
+    <string name="zg_bank">中国银行</string>
+    <string name="js_bank">建设银行</string>
+    <string name="zs_bank">招商银行</string>
+    <string name="yc_bank">邮储银行</string>
+    <string name="wc_pay">微信</string>
+    <string name="al_pay">支付宝</string>
+    <string name="submit_pay_text">提交支付</string>
+    <string name="pay_success_text">支付成功</string>
+    <string name="tip_text">提示</string>
+
+
+    <string name="main_tab_two">订单</string>
+    <string name="order_now">未出行订单</string>
+    <string name="order_old">历史订单</string>
+    <string name="order_unpaid">未完成订单</string>
+    <string name="id_cart_text">二代身份证</string>
+    <string name="return_ticket_text">退票</string>
+    <string name="confirm_return_ticket">确定退票</string>
+    <string name="change_ticket_text">改签</string>
+    <string name="order_success_text">购票成功</string>
+
+
+    <string name="main_tab_three">我</string>
+    <string name="modify_info">修改信息</string>
+    <string name="modify_member">管理联系人</string>
+    <string name="modify_password">修改密码</string>
+    <string name="old_password_text">原密码</string>
+    <string name="old_password_hint">请输入原密码</string>
+    <string name="new_password_text">新密码</string>
+    <string name="new_password_hint">请输入新密码</string>
+    <string name="re_new_password_text">确认新密码</string>
+    <string name="re_new_password_hint">请再次输入新密码</string>
+    <string name="submit_text">提交</string>
+    <string name="about_text">关于</string>
+    <string name="version_text">1.8.0</string>
+    <string name="exit_text">注销</string>
+
+</resources>

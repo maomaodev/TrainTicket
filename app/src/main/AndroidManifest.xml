@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.trainticket_01">
+
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- 读写文件权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".config.TrainTicketApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.trainticket_01.view.activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".view.activity.LoginActivity"/>
+        <activity android:name=".view.activity.RegisterActivity"/>
+        <activity android:name=".view.activity.MainActivity"/>
+        <activity android:name=".view.activity.QueryTicketActivity"/>
+        <activity android:name=".view.activity.TicketDetailActivity"/>
+        <activity android:name=".view.activity.SelectMemberActivity"/>
+        <activity android:name=".view.activity.PayTicketActivity"/>
+        <activity android:name=".view.activity.OutTicketActivity"/>
+        <activity android:name=".view.activity.QueryOrderActivity"/>
+        <activity android:name=".view.activity.ReturnTicketActivity"/>
+        <activity android:name=".view.activity.OrderDetailActivity"/>
+        <activity android:name=".view.activity.ModifyInfoActivity"/>
+        <activity android:name=".view.activity.ModifyPasswordActivity"/>
+        <activity android:name=".view.activity.AboutActivity"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/view_title_bar"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:padding="20dp"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--出发地、出发时间、目的地、到达时间-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/start_station_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    tools:text="广州"/>
+
+                <TextView
+                    android:id="@+id/start_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/start_station_tv"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    tools:text="12：30"/>
+
+                <TextView
+                    android:id="@+id/train_no_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/white"
+                    tools:text="K87"/>
+
+                <ImageView
+                    android:id="@+id/right_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/train_no_tv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-12dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_trending_arrows"/>
+
+                <TextView
+                    android:id="@+id/date_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/right_arrow"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-15dp"
+                    android:textColor="@color/white"
+                    tools:text="2019-05-01"/>
+
+                <TextView
+                    android:id="@+id/end_station_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    tools:text="南昌"/>
+
+                <TextView
+                    android:id="@+id/end_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/start_station_tv"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    tools:text="17:00"/>
+
+            </RelativeLayout>
+
+            <!--姓名、身份证、座位、车票-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/real_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#b3000000"
+                    android:textSize="16sp"
+                    tools:text="cookie"/>
+
+                <TextView
+                    android:id="@+id/id_number_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/real_name_tv"
+                    android:layout_marginTop="8dp"
+                    android:maxLength="18"
+                    android:textColor="#b3000000"
+                    tools:text="1234**********1234"/>
+
+                <TextView
+                    android:id="@+id/order_success_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/id_number_tv"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/order_success_text"
+                    android:textColor="@color/red"/>
+
+                <TextView
+                    android:id="@+id/price_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="#b3000000"
+                    android:textSize="16sp"
+                    tools:text="￥500"/>
+
+                <TextView
+                    android:id="@+id/seat_type_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_toLeftOf="@+id/price_tv"
+                    android:textColor="#b3000000"
+                    android:textSize="16sp"
+                    tools:text="硬卧"/>
+
+                <TextView
+                    android:id="@+id/seat_no_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/id_number_tv"
+                    android:textColor="#b3000000"
+                    tools:text="33号座"/>
+
+                <TextView
+                    android:id="@+id/carriage_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/id_number_tv"
+                    android:layout_toLeftOf="@+id/seat_no_tv"
+                    android:textColor="#b3000000"
+                    tools:text="15号车厢"/>
+
+            </RelativeLayout>
+
+            <include layout="@layout/view_split_line"/>
+
+            <!--二维码区域-->
+            <ImageView
+                android:id="@+id/qr_code_iv"
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

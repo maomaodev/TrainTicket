@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="45dp"
+        android:gravity="center"
+        android:padding="25dp"
+        android:scaleType="centerInside"
+        android:src="@mipmap/app_icon"/>
+
+    <!--账号区域-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/account_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/account_hint"
+            android:maxLength="16"
+            android:padding="6dp"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <include layout="@layout/view_split_line"/>
+
+    <!--密码区域-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/password_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:padding="6dp"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <include layout="@layout/view_split_line"/>
+
+    <TextView
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/common_btn_bg"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/login_text"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
+
+    <!--登录注册按钮区域-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <!--自动登录区域-->
+        <CheckBox
+            android:id="@+id/auto_login_cb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/auto_login"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/register_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center|right"
+            android:padding="8dp"
+            android:text="@string/turn_to_register"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|bottom"
+        android:paddingBottom="14dp"
+        android:text="@string/login_protocol_text"
+        android:textSize="12sp"/>
+
+</LinearLayout>
